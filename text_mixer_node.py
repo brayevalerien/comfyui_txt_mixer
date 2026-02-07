@@ -8,6 +8,10 @@ class TextMixer:
         return {
             "required": {
                 "inputs_count": ("INT", {"default": 3, "min": 1, "max": 50, "step": 1}),
+                "txt_1": ("STRING", {"default": "", "forceInput": True}),
+            },
+            "optional": {
+                "txt_2": ("STRING", {"default": "", "forceInput": True}),
             },
         }
 
